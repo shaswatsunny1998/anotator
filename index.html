@@ -8,8 +8,8 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -24,7 +24,7 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Avilon
@@ -45,7 +45,7 @@
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto">ANNOTATOR</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+        <!-- <a href="#intro"><img src="logo.png" alt="" title=""></a> -->
       </div>
 
       <nav id="nav-menu-container">
@@ -69,37 +69,19 @@
       <h1>Welcome to Annotators</h1><p class="introtext">
         Upload your document to find out the document type
       </p>
-      <input type="button" id="btnFileUpload" value="Upload File" class="btn-get-started scrollto"/>
-      <span id="spnFilePath"></span>
-      <input type="file" id="FileUpload1" style="display: none" />
-      <script type="text/javascript">
-          window.onload = function () {
-              var fileupload = document.getElementById("FileUpload1");
-              var filePath = document.getElementById("spnFilePath");
-              var button = document.getElementById("btnFileUpload");
-              button.onclick = function () {
-                  fileupload.click();
-              };
-              fileupload.onchange = function () {
-                  var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
-                  filePath.innerHTML = "<b>Selected File: </b>" + fileName;
-              };
-          };
-      </script>
-      
+      <input type="button"  id="btnFileUpload" value="Upload File" class="btn-get-started scrollto" onclick="location.href = 'display.html';"/> 
     </div>
-
     <div class="product-screens">
 
 
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="img/product-screen-2.jpg" alt="">
+        <img src="product-screen-2.jpg" alt="">
       </div>
 
 
    
       <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
-        <img src="img/product-screen-3.jpg" alt="">
+        <img src="product-screen-3.jpg" alt="">
       </div>
       </div>>
     </div>
@@ -123,7 +105,7 @@
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img id="bookpic" src="img/about-img.jpg" alt="">
+            <img id="bookpic" src="about-img.jpg" alt="">
           </div>
 
           <div id="booktext" class="col-lg-6 content wow fadeInRight">
@@ -160,7 +142,7 @@
         <div class="row wow fadeInUp">
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="img/team/team-1.jpeg" alt=""></div>
+              <div class="pic"><img src="team-1.jpeg" alt=""></div>
               <h4>Gowtham Pollam</h4>
               <span>Machine learning engineer</span>
               <div class="social">
@@ -174,7 +156,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="img/team/team-2.jpeg" alt=""></div>
+              <div class="pic"><img src="team-2.jpeg" alt=""></div>
               <h4>Muskan Tewari</h4>
               <span>Product Manager</span>
               <div class="social">
@@ -188,7 +170,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="img/team/team-3.jpg" alt=""></div>
+              <div class="pic"><img src="team-3.jpg" alt=""></div>
               <h4>Suchismita</h4>
               <span>CTO</span>
               <div class="social">
@@ -326,7 +308,7 @@
   <script src="contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>
