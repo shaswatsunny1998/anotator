@@ -1,0 +1,49 @@
+<html>
+    <head>
+
+      
+        <!-- Favicons -->
+        <link href="favicon.png" rel="icon">
+        <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+            <p><label for="file" id="up">UPLOAD DOCUMENT</label></p>
+            <p><img id="output" width="500" /></p>
+
+            <script>
+            var loadFile = function(event) {
+                var image = document.getElementById('output');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+            </script>
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/jquery/jquery-migrate.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/superfish/hoverIntent.js"></script>
+      <script src="lib/superfish/superfish.min.js"></script>
+      <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    
+      <!-- Template Main Javascript File -->
+      <script src="main.js"></script>
+    
+    </body>
+</html>
