@@ -1,12 +1,11 @@
 body {
-    margin-left: 450px;
+    margin-left: 420px;
     margin-top: 300px;
     background: darkturquoise;
-    color: black;
+    color:whitesmoke;
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
   }
 #up{
   font-size: 50px;
-  font-style: oblique;
 }
